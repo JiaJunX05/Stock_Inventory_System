@@ -56,10 +56,10 @@
                     <div class="input-group">
                         @if ($product->quantity == 0)
                             <input type="number" class="form-control" id="stock_quantity" name="stock_quantity" min="1" 
-                                   placeholder="Enter Your Stock Quantity" required>
+                                placeholder="Enter Your Stock Quantity" required>
                         @else
                             <input type="number" class="form-control" id="stock_quantity" name="stock_quantity" min="1" 
-                                   max="{{ $product->quantity }}" placeholder="Enter Your Stock Quantity" required>
+                                max="{{ request('status') === 'stock_out' ? $product->quantity : '' }}" placeholder="Enter Your Stock Quantity" required>
                         @endif
                     </div>
                 </div>
