@@ -29,7 +29,7 @@ class AdminController extends Controller
         if (Auth::guard('admin')->attempt($credentials)) {
             return redirect()->route('admin.dashboard')->with('success', 'You are logged in successfully');
         } else {
-            return redirect()->route('admin.login')->withErrors(['error' => 'Invalid email or password']);
+            return redirect()->back()->withErrors(['error' => 'Invalid email or password']);
         }        
     }
 
