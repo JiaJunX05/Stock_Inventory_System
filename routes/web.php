@@ -1,19 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\GuestController;
 use App\Http\Controllers\Admin\Auth\AdminController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Middleware\AdminAuth;
 
 // User Panel
-Route::get('/', [AuthController::class, 'dashboard'])->name('dashboard');
+Route::get('/', [GuestController::class, 'dashboard'])->name('dashboard');
 
 
 // Admin Panel
 Route::prefix('admin')->group(function() {
 
-    Route::get('/', [AdminController::class, 'index'])->name('admin.login');
+    Route::get('/', [AdminController::class, 'showLoginForm'])->name('admin.login');
     Route::post('/login', [AdminController::class, 'login'])->name('admin.login.submit');
 
     Route::middleware([AdminAuth::class])->group(function() {

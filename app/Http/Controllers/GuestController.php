@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
-class AuthController extends Controller
+class GuestController extends Controller
 {
     public function dashboard(Request $request) {
 
@@ -38,5 +37,5 @@ class AuthController extends Controller
         // 非 AJAX 请求，返回视图
         $products = Product::all(); // 不再默认按名称排序
         return view('dashboard', compact('products'));
-    }    
+    }
 }
