@@ -17,8 +17,8 @@
 
     <!-- Welcome Section -->
     <div class="mb-5">
-        <h1 class="display-4 text-primary font-weight-bold">Welcome to Admin Panel</h1>
-        <p class="lead text-muted">Manage your products here.</p>
+        <h1 class="display-4 text-primary font-weight-bold">Welcome to the Inventory Admin Panel</h1>
+        <p class="lead text-muted">Manage and organize your products efficiently.</p>
     </div>    
 
     <div class="mb-3">

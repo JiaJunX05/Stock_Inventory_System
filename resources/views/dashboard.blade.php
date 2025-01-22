@@ -17,8 +17,8 @@
 
     <!-- Welcome Section -->
     <div class="mb-5">
-        <h1 class="display-4 text-primary font-weight-bold">Welcome to User Panel</h1>
-        <p class="lead text-muted">Manage your inventory system efficiently</p>
+        <h1 class="display-4 text-primary font-weight-bold">Welcome to Your User Panel</h1>
+        <p class="lead text-muted">Select the relevant inventory details for your needs.</p>
     </div>    
 
     <div class="mb-3">
