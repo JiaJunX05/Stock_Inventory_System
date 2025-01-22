@@ -17,7 +17,7 @@
 
     <!-- Welcome Section -->
     <div class="mb-5">
-        <h1 class="display-4 text-primary font-weight-bold">Welcome to UserUser Panel</h1>
+        <h1 class="display-4 text-primary font-weight-bold">Welcome to User Panel</h1>
         <p class="lead text-muted">Manage your products here.</p>
     </div>    
 
